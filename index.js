@@ -20,9 +20,8 @@ class Bus extends Vehiculo {
 }
 
 class Bicicleta extends Vehiculo {
-    constructor(numRuedas, numPasajeros, tipo) {
+    constructor(tipo) {
         super(numRuedas);
-        this.numPasajeros = numPasajeros;
         this.tipo = tipo;
     }
 
