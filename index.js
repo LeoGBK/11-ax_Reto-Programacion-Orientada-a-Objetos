@@ -26,11 +26,12 @@ class Bicicleta extends Vehiculo {
     }
 
     mostrarDetallesBicicleta() {
-        console.log(`Es una bicicleta de tipo ${this.tipo}`);
+        return 'Es una bicicleta de tipo ' + this.tipo + '.';
     }
 }
 
 const auto = new Auto(4, 5);
-const bicicleta = new Bicicleta('Montaña');
+const bicicleta = new Bicicleta(2, 'Montaña');
 
 console.log(auto.mostrarDetalles(), auto.mostrarDetallesAuto());
+console.log(bicicleta.mostrarDetalles(), bicicleta.mostrarDetallesBicicleta());
