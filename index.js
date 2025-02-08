@@ -9,10 +9,9 @@ class Vehiculo {
 }
 
 class Bus extends Vehiculo {
-    constructor(numRuedas, numPasajeros, alcance) {
+    constructor(numPasajeros) {
         super(numRuedas);
         this.numPasajeros = numPasajeros;
-        this.alcance = alcance;
     }
 
     mostrarDetallesBus() {
