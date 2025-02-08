@@ -14,6 +14,10 @@ class Bus extends Vehiculo {
         this.numPasajeros = numPasajeros;
         this.alcance = alcance;
     }
+
+    mostrarDetallesBus() {
+        console.log(`Este vehículo tiene ${this.numRuedas}`);
+    }
 }
 
 class Bicicleta extends Vehiculo {
@@ -21,6 +25,10 @@ class Bicicleta extends Vehiculo {
         super(numRuedas);
         this.numPasajeros = numPasajeros;
         this.tipo = tipo;
+    }
+
+    mostrarDetallesBicicleta() {
+        console.log(`Este vehículo tiene ${this.numRuedas}`);
     }
 }
 
