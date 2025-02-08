@@ -8,7 +8,15 @@ class Vehiculo {
     }
 }
 
-class Bicicleta {
+class Bus extends Vehiculo {
+    constructor(numRuedas, numPasajeros, alcance) {
+        super(numRuedas);
+        this.numPasajeros = numPasajeros;
+        this.alcance = alcance;
+    }
+}
+
+class Bicicleta extends Vehiculo {
     constructor(numRuedas, numPasajeros, tipo) {
         super(numRuedas);
         this.numPasajeros = numPasajeros;
@@ -16,13 +24,6 @@ class Bicicleta {
     }
 }
 
-class Bus {
-    constructor(numRuedas, numPasajeros, alcance) {
-        super(numRuedas);
-        this.numPasajeros = numPasajeros;
-        this.alcance = alcance;
-    }
-}
 
 mostrarDetallesTipo() {
     console.log(`Este vehículo tiene ${this.numRuedas}`);
