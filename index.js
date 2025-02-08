@@ -16,7 +16,7 @@ class Bus extends Vehiculo {
     }
 
     mostrarDetallesBus() {
-        console.log(`Este vehículo tiene ${this.numRuedas}`);
+        console.log(`Puede transportar ${this.numPasajeros}`);
     }
 }
 
