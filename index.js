@@ -31,3 +31,5 @@ class Bicicleta extends Vehiculo {
 }
 
 const bus = new Bus(60);
+const bicicleta = new Bicicleta('Montaña');
+
