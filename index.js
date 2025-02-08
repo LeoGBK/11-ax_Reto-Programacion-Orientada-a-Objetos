@@ -8,19 +8,19 @@ class Vehiculo {
     }
 }
 
-class Bus extends Vehiculo {
-    constructor(numPasajeros) {
+class Auto extends Vehiculo {
+    constructor(numRuedas, numPasajeros) {
         super(numRuedas);
         this.numPasajeros = numPasajeros;
     }
 
-    mostrarDetallesBus() {
+    mostrarDetallesAuto() {
         console.log(`Puede transportar ${this.numPasajeros}`);
     }
 }
 
 class Bicicleta extends Vehiculo {
-    constructor(tipo) {
+    constructor(numRuedas, tipo) {
         super(numRuedas);
         this.tipo = tipo;
     }
@@ -30,8 +30,8 @@ class Bicicleta extends Vehiculo {
     }
 }
 
-const bus = new Bus(60);
+const auto = new Auto(4, 5);
 const bicicleta = new Bicicleta('Montaña');
 
-bus.mostrarDetalles();
-bus.mostrarDetallesBus();
+auto.mostrarDetalles();
+auto.mostrarDetallesAuto();
