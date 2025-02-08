@@ -4,7 +4,7 @@ class Vehiculo {
     }
 
     mostrarDetalles() {
-        console.log(`Este vehículo tiene ${this.numRuedas}`);
+        return 'Este vehículo tiene ' + this.numRuedas + ' ruedas.';
     }
 }
 
@@ -15,7 +15,7 @@ class Auto extends Vehiculo {
     }
 
     mostrarDetallesAuto() {
-        console.log(`Puede transportar ${this.numPasajeros}`);
+        return 'Puede transportar ' + this.numPasajeros + ' pasajeros';
     }
 }
 
@@ -33,5 +33,4 @@ class Bicicleta extends Vehiculo {
 const auto = new Auto(4, 5);
 const bicicleta = new Bicicleta('Montaña');
 
-auto.mostrarDetalles();
-auto.mostrarDetallesAuto();
+console.log(auto.mostrarDetalles(), auto.mostrarDetallesAuto());
