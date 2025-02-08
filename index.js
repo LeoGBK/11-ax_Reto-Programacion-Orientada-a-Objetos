@@ -29,3 +29,5 @@ class Bicicleta extends Vehiculo {
         console.log(`Es una bicicleta de tipo ${this.tipo}`);
     }
 }
+
+const bus = new Bus(60);
