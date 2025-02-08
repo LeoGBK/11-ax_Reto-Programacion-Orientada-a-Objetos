@@ -29,8 +29,3 @@ class Bicicleta extends Vehiculo {
         console.log(`Es una bicicleta de tipo ${this.tipo}`);
     }
 }
-
-
-mostrarDetallesTipo() {
-    console.log(`Este vehículo tiene ${this.numRuedas}`);
-}
